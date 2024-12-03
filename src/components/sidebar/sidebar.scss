@@ -1,0 +1,86 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem 1.75rem;
+  min-height: 100vh;
+  flex: 1;
+  margin-left: 2.5rem;
+  .brand {
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    span {
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: #b9bbbd;
+    }
+  }
+  .menus {
+    flex-grow: 2;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        position: relative;
+        margin-bottom: 0.5rem;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0.25rem;
+          height: 100%;
+          background: transparent;
+          border-radius: 3.75rem 0 0 3.75rem;
+          right: -1.75rem;
+          transition: all ease-in-out 0.3s;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: #464255;
+          font-size: 1.125rem;
+          transition: all ease-in-out 0.3s;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          svg {
+            path {
+              transition: all ease-in-out 0.3s;
+            }
+          }
+        }
+        &.active,
+        &:hover {
+          &::before {
+            background-color: #00b074;
+          }
+          a {
+            font-weight: bold;
+            background-color: rgba(0, 176, 116, 0.15);
+            color: #00b074;
+            svg {
+              path {
+                fill: #00b074;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    .copyright{
+        direction: ltr;
+        text-align: left;
+        h6{
+            font-weight: bold;
+        }
+        span{
+            color: #969BA0;
+            font-weight: 300;
+        }
+    }
+  }
+}

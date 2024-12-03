@@ -1,0 +1,27 @@
+@import "./font.css";
+:root {
+  color: #000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  background-color: #f3f2f7 !important;
+  font-family: "Yekan Bakh", system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  font-family: "Yekan Bakh", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}

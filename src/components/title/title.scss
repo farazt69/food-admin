@@ -1,0 +1,20 @@
+.sectionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    .right{
+        h2{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        span{
+            color: #A3A3A3;
+        }
+    }
+    .left{
+        p{
+            font-family: 'Yekan Bakh', system-ui, Avenir, Helvetica, Arial, sans-serif;
+        }
+    }
+}

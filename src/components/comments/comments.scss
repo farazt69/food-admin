@@ -1,0 +1,87 @@
+.comments {
+ 
+  margin-top: 2.5rem;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      margin-bottom: 2.5rem;
+      h6 {
+        font-size: 2rem;
+        color: #464255;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+      span {
+        font-size: 1rem;
+        color: #a3a3a3;
+      }
+    }
+    .sliderButtons {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+      button{
+          background-color: #fff;
+          border: none;
+          border-radius: .875rem;
+          padding: .625rem;
+      }
+    }
+  }
+}
+.commentCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .content {
+    width: 70%;
+    padding: 1rem;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      .user__info {
+        h4 {
+          font-size: 1.25rem;
+          color: #464255;
+          margin-bottom: 0;
+          font-weight: bold;
+        }
+        span {
+          font-size: 0.75rem;
+          color: #a3a3a3;
+        }
+      }
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: #464255;
+      text-align: justify;
+    }
+    .rate {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+  .thumbnail {
+    width: 11.875rem;
+    img {
+      max-width: 100%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+  }
+}
